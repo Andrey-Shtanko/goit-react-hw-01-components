@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 export const BackGround = styled.div`
   padding: 100px;
   background-color: lightblue;
+  margin-bottom: 50px;
 `;
 
 export const Container = styled.div`
