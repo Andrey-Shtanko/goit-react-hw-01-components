@@ -31,9 +31,11 @@ export const App = () => {
           stats={user.stats}
         />
       </BackGround>
+      <BackGround>
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+      </BackGround>
 
-      <Statistics title="Upload stats" stats={data} />
-      {/* <Statistics stats={data} /> */}
       <FriendList friends={friends} />
       <TransitionHistory items={transactions} />
     </div>
