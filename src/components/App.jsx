@@ -7,6 +7,8 @@ import { Statistics } from './Statistics/Statistics';
 
 import { FriendList } from './FriendList/FriendList';
 import { TransitionHistory } from './TransactionHistory/TransactionHistory';
+import { BackGround } from './Profile/Profile.styled';
+
 export const App = () => {
   return (
     <div
@@ -20,13 +22,16 @@ export const App = () => {
         // color: '#010101',
       }}
     >
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      <BackGround>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </BackGround>
+
       <Statistics title="Upload stats" stats={data} />
       {/* <Statistics stats={data} /> */}
       <FriendList friends={friends} />
